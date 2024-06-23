@@ -1,0 +1,128 @@
+/* ! NAVBAR */
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-right: var(--arianoid-padding-m);
+  background-color: var(--light);
+  transition: 0.4s;
+  &.dark {
+    background-color: #161818;
+  }
+}
+
+header > img {
+  height: 30px;
+}
+
+.logo {
+  margin-left: var(--arianoid-margin-l);
+  height: 50px;
+  cursor: pointer;
+}
+
+.search-button {
+  border: none;
+  padding: 5px 10px 10px 10px;
+  border-radius: var(--arianoid-border-radius);
+  margin-right: var(--arianoid-margin-xs);
+}
+
+.notificaciones,
+.mensajes {
+  &.dark {
+    filter: contrast(0%);
+    filter: brightness(1000%);
+  }
+}
+
+.search-button:hover {
+  cursor: pointer;
+}
+
+.button-img {
+  height: 20px;
+  padding-top: var(--arianoid-padding-xs);
+}
+
+.search-form {
+  width: 50%;
+}
+
+.search-bar {
+  height: 40px;
+  width: 90%;
+  margin-right: 10px;
+  background-color: var(--arianoid-bgSearchBar);
+  border: none;
+  border-radius: var(--arianoid-border-radius);
+  padding-left: var(--arianoid-padding-m);
+  min-width: 215px;
+}
+
+header > ul {
+  display: flex;
+  gap: var(--arianoid-gap-xxl);
+  margin: var(--arianoid-margin-m);
+}
+
+header > ul > li {
+  padding: var(--arianoid-padding-s);
+  border-radius: var(--arianoid-border-radius);
+}
+
+header.dark li {
+  color: var(--light);
+}
+
+header.dark li:hover {
+  color: var(--light);
+
+  background-color: var(--arianoid-dark-color-1);
+}
+
+header > ul > li:hover {
+  background-color: var(--arianoid-light-color-1);
+  color: var(--light);
+  cursor: pointer;
+}
+
+.notificaciones:hover,
+.mensajes:hover {
+  cursor: pointer;
+}
+
+/*! RESPONSIVE */
+@media (width <= 1021px) {
+  .search-button {
+    display: none;
+  }
+}
+
+@media (width <= 940px) {
+  header > ul {
+    display: none;
+  }
+
+  .logo {
+    margin: var(--arianoid-margin-s);
+  }
+
+  .notificaciones {
+    display: none;
+  }
+
+  .mensajes {
+    display: none;
+  }
+
+  .search-form {
+    width: 80%;
+    margin-left: var(--arianoid-margin-m);
+  }
+}
