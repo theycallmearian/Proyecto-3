@@ -156,7 +156,8 @@ function showToast(message) {
     toast.classList.add('toast')
 
     const img = document.createElement('img')
-    img.src = './src/assets/game-over-game.gif'
+    img.src =
+      'https://res.cloudinary.com/dye4qdrys/image/upload/v1719140331/game-over-game_mhnvsf.gif'
     img.classList.add('toastimg')
 
     const p = document.createElement('p')

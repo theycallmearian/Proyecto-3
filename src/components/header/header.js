@@ -17,7 +17,8 @@ export const createHeader = () => {
   const mensajes = document.createElement('img')
 
   // Establecer atributos y propiedades
-  logo.src = './src/assets/logo_little.svg'
+  logo.src =
+    'https://res.cloudinary.com/dye4qdrys/image/upload/v1719140330/logo_little_yz84uc.svg'
   logo.classList.add('logo')
 
   inicio.textContent = 'Inicio'
@@ -83,13 +84,16 @@ export const createHeader = () => {
 
   btnBuscar.type = 'submit'
   btnBuscar.classList.add('search-button')
-  btnImg.src = './src/assets/search.svg'
+  btnImg.src =
+    'https://res.cloudinary.com/dye4qdrys/image/upload/v1719140330/search_tpru3u.svg'
   btnImg.classList.add('button-img')
 
-  notificaciones.src = './src/assets/inbox.svg'
+  notificaciones.src =
+    'https://res.cloudinary.com/dye4qdrys/image/upload/v1719140330/inbox_udb0hk.svg'
   notificaciones.classList.add('notificaciones')
 
-  mensajes.src = './src/assets/messages.svg'
+  mensajes.src =
+    'https://res.cloudinary.com/dye4qdrys/image/upload/v1719140330/messages_obfwxe.svg'
   mensajes.classList.add('mensajes')
 
   // Crear el switch
